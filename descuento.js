@@ -58,5 +58,5 @@ const argv = yargs
 
 
 //testes por linea de comando:
-//node index.js calcularDescuento --n='Maria' --m=1000 --d=10
-//node index.js calcularDescuento --n='Jose' --m=1000 --d=20
+//node descuento.js calcularDescuento --n='Maria' --m=1000 --d=10
+//node descuento.js calcularDescuento --n='Jose' --m=1000 --d=20
