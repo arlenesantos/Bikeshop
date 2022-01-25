@@ -23,23 +23,23 @@
 
     <main>
         <section class="container mt-5">
-            <h1 class="h4">Monitor de Inventario</h1>
+            <h1 class="h4 pb-4">Monitor de Inventario</h1>
             <div>
                 <form class="row gx-3 gy-2 align-items-center">
                     <div class="col-sm-3">
-                        <label for="tienda" class="form-label">Tienda</label>
+                        <label for="tienda" class="form-label text-muted">Tienda</label>
                         <select class="form-select" id="tienda">
                             <option selected>Seleccione...</option>
                         </select>
                     </div>
                     <div class="col-sm-3">
-                        <label for="categoria" class="form-label">Categoría</label>
+                        <label for="categoria" class="form-label text-muted">Categoría</label>
                         <select class="form-select" id="categoria">
                             <option selected>Seleccione...</option>
                         </select>
                     </div>
                     <div class="col-sm-3">
-                        <label for="marca" class="form-label">Marca</label>
+                        <label for="marca" class="form-label text-muted">Marca</label>
                         <select class="form-select" id="marca">
                             <option selected>Seleccione...</option>
                         </select>
@@ -50,9 +50,9 @@
                     </div>
                 </form>
             </div>
-
-            <div class="mt-5">
-                <table class="table">
+            
+            <div class="table-responsive mt-5">
+                <table class="table table-borderless">
                     <thead>
                         <tr>
                             <th scope="col">Tienda</th>
@@ -62,7 +62,7 @@
                             <th scope="col">Acción</th>
                         </tr>
                     </thead>
-                    <tbody></tbody>
+                    <tbody></tbody>                    
                 </table>
             </div>
         </section>
@@ -132,7 +132,7 @@
                             <td>${data.inventario[i].quantity}</td>
                             <td><button class="btn btn-primary blue">VER</button></td>
                         </tr>`;
-            }
+            }            
 
         }).catch(error => console.log(error));
     });
