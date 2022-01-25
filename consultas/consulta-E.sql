@@ -8,3 +8,4 @@ INNER JOIN stores ON stocks.store_id = stores.store_id
 WHERE categories.category_name = 'Electric Bikes' AND stores.store_name = 'Santa Cruz Bikes'
 GROUP BY stocks.product_id, products.product_name
 ORDER BY products.product_name ASC;
+
